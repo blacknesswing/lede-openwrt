@@ -27,8 +27,11 @@
 # git clone https://github.com/jerrykuku/node-request package/node-request
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
+#oled
+git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+
 # luci-app-dockerman
-# git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
+git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
 
 # luci-app-vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
