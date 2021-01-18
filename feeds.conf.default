@@ -1,0 +1,2 @@
+src-git passwall https://github.com/xiaorouji/openwrt-passwall
+src-git jerryk https://github.com/jerrykuku/openwrt-package
