@@ -16,8 +16,8 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # lede源码增加passwall,也适用于增加其他插件的方法
-sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+# sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+# sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
 # 删除源码自带的argon主题，因为最下面一个链接是增加了其他作者制作的argon主题
 # cd openwrt
