@@ -54,6 +54,9 @@ git clone https://github.com/destan19/OpenAppFilter.git /package/luci-app-OpenAp
 # cpu调节
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
 
+# adguardhome
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
+
 
 # argon-主题
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  
