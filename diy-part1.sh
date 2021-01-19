@@ -52,8 +52,8 @@ git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #�
 #增加了可以强制锁定暗色模式的功能，如果需要，请登录ssh 输入：touch /etc/dark 即可开启，关闭请输入：rm -rf /etc/dark，关闭后颜色模式为跟随系统
 
 # wifi
-git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl8812au-ac package/lean/rtl8812au-ac
-git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl8821cu package/lean/rtl8821cu
-git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl88x2bu package/lean/rtl88x2bu
-git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/mt7601u-ap package/lean/mt7601u-ap
+git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl8812au-ac package/rtl8812au-ac
+git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl8821cu package/rtl8821cu
+git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl88x2bu package/rtl88x2bu
+git clone https://github.com/1715173329/openwrt/tree/openwrt-18.06/package/ctcgfw/mt7601u-ap package/mt7601u-ap
 
