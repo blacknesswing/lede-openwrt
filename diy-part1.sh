@@ -33,20 +33,27 @@ git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # luci-app-dockerman
 git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
 
-# luci-app-vssr
-# git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
-# git clone https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
+#主题-edge-动态登陆界面
+git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  
 
-#添加自定义插件链接（自己想要什么就github里面搜索然后添加）
-# git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  #主题-edge-动态登陆界面
+# openclash出国软件
 git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash  #openclash出国软件
-git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
+
+# 微信推送
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
+
+# smartdns DNS加速
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
+
+# 内网IP限速工具
 git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
+
+# app过滤
+git clone https://github.com/destan19/OpenAppFilter.git /package/luci-app-OpenAppFilter     
 
 # cpu调节
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+
 
 # argon-主题
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  
