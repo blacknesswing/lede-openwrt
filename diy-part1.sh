@@ -20,8 +20,8 @@
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
 # 删除源码自带的argon主题，因为最下面一个链接是增加了其他作者制作的argon主题
-# cd openwrt
-#rm -rf package/lean/luci-theme-argon 
+cd openwrt
+rm -rf package/lean/luci-theme-argon 
 
 # 京东签到
 # git clone https://github.com/jerrykuku/node-request package/node-request
