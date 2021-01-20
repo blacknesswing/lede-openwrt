@@ -47,15 +47,13 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 
 # 内网IP限速工具
 git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
-
-# app过滤
-git clone https://github.com/destan19/OpenAppFilter.git /package/luci-app-AppFilter     
+  
 
 # cpu调节
-svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean package/lean/luci-app-cpufreq
+# svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean package/lean/luci-app-cpufreq
 
 # adguardhome
-svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
+# svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
 
 
 # argon-主题
