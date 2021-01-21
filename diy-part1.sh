@@ -70,7 +70,7 @@ git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #�
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
 
 # wifi驱动R2s
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8812au-ac package/lean/rtl8821cu
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8821cu package/lean/rtl8821cu
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl88x2bu package/lean/rtl8821cu
+svn co https://github.com/project-openwrt/openwrt/tree/openwrt-18.06-k5.4/package/ctcgfw/rtl8812au-ac package/ctcgfw/rtl8821cu
+svn co https://github.com/project-openwrt/openwrt/tree/openwrt-18.06-k5.4/package/ctcgfw/rtl8821cu package/ctcgfw/rtl8821cu
+svn co https://github.com/project-openwrt/openwrt/tree/openwrt-18.06-k5.4/package/ctcgfw/rtl88x2bu package/ctcgfw/rtl8821cu
 
