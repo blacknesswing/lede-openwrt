@@ -21,7 +21,10 @@
 
 rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
-
+# wifi驱动R2s
+svn co https://github.com/project-openwrt/openwrt/tree/master/package/ctcgfw/rtl8812au-ac package/lean/rtl8812au-ac
+svn co https://github.com/project-openwrt/openwrt/tree/master/package/ctcgfw/rtl8821cu package/lean/rtl8821cu
+svn co https://github.com/project-openwrt/openwrt/tree/master/package/ctcgfw/rtl88x2bu package/lean/rtl88x2bu
 # 删除源码自带的argon主题，因为最下面一个链接是增加了其他作者制作的argon主题
 # cd openwrt
 # rm -rf package/lean/luci-theme-argon 
@@ -69,9 +72,6 @@ git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #�
 # adguardhome
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
 
-# wifi驱动R2s
-svn co https://github.com/project-openwrt/openwrt/tree/master/package/ctcgfw/rtl8812au-ac package/lean/rtl8821cu
-svn co https://github.com/project-openwrt/openwrt/tree/master/package/ctcgfw/rtl8821cu package/lean/rtl8821cu
-svn co https://github.com/project-openwrt/openwrt/tree/master/package/ctcgfw/rtl88x2bu package/lean/rtl8821cu
+
 # https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8821cu
 
