@@ -35,11 +35,11 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-a
 
 # 京东签到
 # git clone https://github.com/jerrykuku/node-request package/node-request
-# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
 # Vssr
-# git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
-# git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 #oled
 git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
