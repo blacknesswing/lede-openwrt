@@ -72,5 +72,5 @@ git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #�
 # wifi驱动R2s
 svn co https://github.com/project-openwrt/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl8812au-ac 
 svn co https://github.com/project-openwrt/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl8821cu
-svn https://github.com/project-openwrt/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl88x2bu
+svn co https://github.com/project-openwrt/openwrt/tree/openwrt-18.06/package/ctcgfw/rtl88x2bu
 
