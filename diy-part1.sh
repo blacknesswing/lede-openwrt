@@ -19,6 +19,9 @@
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
+rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
+
 # 删除源码自带的argon主题，因为最下面一个链接是增加了其他作者制作的argon主题
 # cd openwrt
 # rm -rf package/lean/luci-theme-argon 
