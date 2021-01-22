@@ -41,6 +41,9 @@ svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw
 # git clone https://github.com/jerrykuku/node-request package/node-request
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
+#cpufreq
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+
 # Vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
@@ -67,8 +70,6 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
   
 
-# cpu调节
-# svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean package/lean/luci-app-cpufreq
 
 # adguardhome
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
