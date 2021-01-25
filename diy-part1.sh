@@ -39,7 +39,7 @@ svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw
 
 # 京东签到
 # git clone https://github.com/jerrykuku/node-request package/node-request
-# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
 #cpufreq
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
