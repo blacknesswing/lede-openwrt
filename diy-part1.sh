@@ -19,23 +19,14 @@
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
+# argon-主题
 rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
+
 # wifi驱动R2s
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8821cu package/ctcgfw/rtl8821cu
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8812au-ac package/ctcgfw/rtl8812au-ac
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl88x2bu package/ctcgfw/rtl88x2bu
-# https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8821cu package/ctcgfw/rtl8821cu
-# 删除源码自带的argon主题，因为最下面一个链接是增加了其他作者制作的argon主题
-# cd openwrt
-# rm -rf package/lean/luci-theme-argon 
-
-# argon-主题
-# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-# git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-#全新的[argon-主题]登录界面,图片背景跟随Bing.com，每天自动切换
-#增加可自定义登录背景功能，请自行将文件上传到/www/luci-static/argon/background 目录下，支持jpg png gif格式图片，主题将会优先显示自定义背景，多个背景为随机显示，系统默认依然为从bing获取
-#增加了可以强制锁定暗色模式的功能，如果需要，请登录ssh 输入：touch /etc/dark 即可开启，关闭请输入：rm -rf /etc/dark，关闭后颜色模式为跟随系统
 
 # 京东签到
 # git clone https://github.com/jerrykuku/node-request package/node-request
@@ -43,6 +34,7 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-j
 
 #luci-app-freq
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+patch -p1 < ../patches/2002-luci-app-freq.patch
 # git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
 
 # Vssr
@@ -70,11 +62,8 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # 内网IP限速工具
 git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
   
-
-
 # adguardhome
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
 
 
-# https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8821cu
 
