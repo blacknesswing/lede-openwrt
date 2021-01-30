@@ -33,7 +33,7 @@ svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
 #luci-app-freq
-svn co -b 18.06 https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
 # git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
 
 # Vssr
