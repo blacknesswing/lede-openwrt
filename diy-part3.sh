@@ -28,13 +28,13 @@ sed -i "s/OpenWrt /Build by Blacknesswing | OpenWrt Lean /g" package/lean/defaul
 
 # 修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-sed -i 's/opp-1392000000 {/opp-1512000000 {' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
+sed -i 's/opp-1392000000 {/opp-1512000000 {' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-hz = /bits/ 64 <1392000000>/opp-hz = /bits/ 64 <1512000000>' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
+sed -i 's/opp-hz = /bits/ 64 <1392000000>/opp-hz = /bits/ 64 <1512000000>' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-microvolt = <1350000>/opp-microvolt = <1400000>' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
+sed -i 's/opp-microvolt = <1350000>/opp-microvolt = <1400000>' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-1512000000 {/opp-1608000000 {' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
+sed -i 's/opp-1512000000 {/opp-1608000000 {' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-hz = /bits/ 64 <1512000000>/opp-hz = /bits/ 64 <1608000000>' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
+sed -i 's/opp-hz = /bits/ 64 <1512000000>/opp-hz = /bits/ 64 <1608000000>' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
