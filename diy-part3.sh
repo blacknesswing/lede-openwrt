@@ -30,11 +30,11 @@ sed -i "s/OpenWrt /Build by Blacknesswing | OpenWrt Lean /g" package/lean/defaul
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 sed -i 's/opp-1392000000/opp-1512000000/g' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-hz = /bits/ 64 <1392000000>/opp-hz = /bits/ 64 <1512000000>/g' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
+sed -i 's/opp-hz = /bits/ 64 <1392000000>/opp-hz = /bits/ 64 <1512000000>/g' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-microvolt = <1350000>/opp-microvolt = <1400000>/g' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
+sed -i 's/opp-microvolt = <1350000>/opp-microvolt = <1400000>/g' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-1512000000/opp-1608000000/g' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
+sed -i 's/opp-1512000000/opp-1608000000/g' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
-sed -i 's/opp-hz = /bits/ 64 <1512000000>/opp-hz = /bits/ 64 <1608000000>/9' /target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
+sed -i 's/opp-hz = /bits/ 64 <1512000000>/opp-hz = /bits/ 64 <1608000000>/9' lede/target/linux/rockchip/patches-5.4/003-arm64-dts-rockchip-add-more-cpu-operating-points-for
 
