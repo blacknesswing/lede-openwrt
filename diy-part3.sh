@@ -29,25 +29,4 @@ sed -i "s/OpenWrt /Build by Blacknesswing | OpenWrt Lean /g" package/lean/defaul
 # 修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-# From: QiuSimons
-diff --git a/arch/arm64/boot/dts/rockchip/rk3328.dtsi b/arch/arm64/boot/dts/rockchip/rk3328.dtsi
-index 8dabc6e29..d58c893a6 100644
---- a/arch/arm64/boot/dts/rockchip/rk3328.dtsi
-+++ b/arch/arm64/boot/dts/rockchip/rk3328.dtsi
-@@ -125,6 +125,16 @@
- 			opp-microvolt = <1300000>;
- 			clock-latency-ns = <40000>;
- 		};
-+		opp-1512000000 {
-+			opp-hz = /bits/ 64 <1512000000>;
-+			opp-microvolt = <1400000>;
-+			clock-latency-ns = <40000>;
-+		};
-+		opp-1608000000 {
-+			opp-hz = /bits/ 64 <1608000000>;
-+			opp-microvolt = <1450000>;
-+			clock-latency-ns = <40000>;
-+		};
- 	};
- 
- 	amba {
+
