@@ -30,6 +30,6 @@ sed -i "s/OpenWrt /Build by Blacknesswing | OpenWrt Lean /g" package/lean/defaul
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 wget https://github.com/quintus-lab/Openwrt-R2S/raw/master/patches/999-unlock-1608mhz-rk3328.patch
 cp 999-unlock-1608mhz-rk3328.patch target/linux/rockchip/patches-5.4/
-sed -i 's/999-unlock-1608mhz-rk3328.patch/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch/g' /target/linux/rockchip/patches-5.4/
+sed -i 's/003-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch/999-unlock-1608mhz-rk3328.patch/g' /target/linux/rockchip/patches-5.4/
 
 
