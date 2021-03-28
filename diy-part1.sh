@@ -24,9 +24,9 @@ rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/je
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
 
 # wifi驱动R2s
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ctcgfw/rtl8821cu package/ctcgfw/rtl8821cu
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ctcgfw/rtl8812au-ac package/ctcgfw/rtl8812au-ac
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ctcgfw/rtl88x2bu package/ctcgfw/rtl88x2bu
+svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8821cu package/ctcgfw/rtl8821cu
+svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl8812au-ac package/ctcgfw/rtl8812au-ac
+svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rtl88x2bu package/ctcgfw/rtl88x2bu
 
 
 # 京东签到
