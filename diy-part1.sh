@@ -64,7 +64,7 @@ git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverc
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
 
 # 内网IP限速工具
-git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
+# git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
   
 # adguardhome
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
