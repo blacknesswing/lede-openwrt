@@ -38,8 +38,9 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-a
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
 #luci-app-freq
-# rm -rf package/lean/luci-app-cpufreq && svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
-git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
+rm -rf package/lean/luci-app-cpufreq && svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+# git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
 
 # Vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
