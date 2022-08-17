@@ -40,8 +40,8 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-a
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 
 #luci-app-freq
-rm -rf package/lean/luci-app-cpufreq && svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
-svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+# rm -rf package/lean/luci-app-cpufreq && svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
+# svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
 # git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
 
 # Vssr
@@ -58,13 +58,13 @@ git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerma
 # git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  
 
 # openclash出国软件
-git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash  #openclash出国软件
+# git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash  #openclash出国软件
 
 # 微信推送
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
 
 # smartdns DNS加速
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
+# git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
 
 # 内网IP限速工具
 # git clone https://github.com/garypang13/luci-app-eqos package/luci-app-eqos  #内网IP限速工具
