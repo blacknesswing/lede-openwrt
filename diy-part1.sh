@@ -28,7 +28,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-a
 
 # wifi驱动R2s
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
-svn co https://github.com/1715173329/imoutowrt/trunk/openwrt-21.02/package/kernel/rtl8821cu /package/kernel/rtl8821cu
+svn co https://github.com/1715173329/imoutowrt/trunk/package/kernel/rtl8821cu /package/kernel/rtl8821cu
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl8812au-ac package/lean/rtl8812au-ac
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl88x2bu package/kernel/rtl88x2bu
 #         https://github.com/immortalwrt/immortalwrt/tree/openwrt-21.02/package/kernel/rtl8821cu
