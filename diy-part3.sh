@@ -23,7 +23,7 @@ sed -i 's,"eth1" "eth0","eth0" "eth1",g' target/linux/rockchip/armv8/base-files/
 sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 
 #修改版本内核（下面两行代码前面有#为源码默认最新5.4内核,没#为4.19内核,默认修改X86的，其他机型L大源码那里target/linux查看，对应修改下面的路径就好）
-#sed -i 's/PATCHVER:=5.15/PATCHVER:=5.4/g' target/linux/rockchip/Makefile  #修改内核版本
+#sed -i 's/PATCHVER:=5.15/PATCHVER:=6.1/g' target/linux/rockchip/Makefile  #修改内核版本
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.19/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/rockchip/Makefile  #修改内核版本
 
 # 版本号里显示一个自己的名字（281677160 build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
