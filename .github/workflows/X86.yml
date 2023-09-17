@@ -33,10 +33,6 @@ env:
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 480
     
 jobs:
   build:
@@ -58,6 +54,10 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+ 
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 480        
 
 
     - name: Clone source code
