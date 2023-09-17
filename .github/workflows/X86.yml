@@ -54,6 +54,10 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
+      test:
+        runs-on: ubuntu-latest
+        timeout-minutes: 480 
+
     - name: Clone source code
       working-directory: /workdir
       run: |
