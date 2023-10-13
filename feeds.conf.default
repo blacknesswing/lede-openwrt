@@ -9,7 +9,7 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-git oldpackages http://git.openwrt.org/packages.git
 #src-link custom /usr/src/openwrt/custom-feed
 src-git helloworld https://github.com/fw876/helloworld
-src-git oled https://github.com/NateLol/luci-app-oled
+#src-git oled https://github.com/NateLol/luci-app-oled
 #src-git jerryk https://github.com/jerrykuku/openwrt-package
-src-git argon https://github.com/jerrykuku/luci-app-argon-config
+#src-git argon https://github.com/jerrykuku/luci-app-argon-config
 src-git vssr https://github.com/jerrykuku/luci-app-vssr
