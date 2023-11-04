@@ -73,5 +73,8 @@ git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # adguardhome
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
 
+sed -i "/helloworld/d" "feeds.conf.default"
+echo "src-git helloworld https://github.com/fw876/helloworld.git;main" >> "feeds.conf.default"
+
 
 
