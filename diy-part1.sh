@@ -23,8 +23,8 @@
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
 # argon-主题
-# rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
-# git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
+rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
 
 # wifi驱动R2s
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
@@ -77,14 +77,8 @@ git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 rm -rf package/community/helloworld
 git clone --depth=1 -b main https://github.com/fw876/helloworld package/helloworld
 
-# Add luci-theme
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
-rm -rf ../../customfeeds/luci/themes/luci-theme-argon
-rm -rf ../../customfeeds/luci/themes/luci-theme-argon-mod
-rm -rf ./luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
-cp -f $GITHUB_WORKSPACE/data/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
-git clone https://github.com/DHDAXCW/theme
+
+
 
 
 
