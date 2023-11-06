@@ -74,9 +74,9 @@ git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/luci-app-adguardhome package/ctcgfw/luci-app-adguardhome
 
 # Add luci-app-ssr-plus
-rm -rf package/community/helloworld
-git clone --depth=1 -b main https://github.com/fw876/helloworld package/helloworld
-
+# rm -rf package/community/helloworld
+# git clone --depth=1 -b main https://github.com/fw876/helloworld package/helloworld
+echo "src-git ssrp https://github.com/fw876/helloworld.git;main" >> ./feeds.conf.default
 
 
 
