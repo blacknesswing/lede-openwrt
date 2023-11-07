@@ -34,7 +34,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 # svn co https://github.com/1715173329/imoutowrt/trunk/package/kernel/rtl8821cu /package/kernel/rtl8821cu
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl8812au-ac package/lean/rtl8812au-ac
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl88x2bu package/kernel/rtl88x2bu
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8812au-ac package/rtl8812au-ac
+# svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8812au-ac package/rtl8812au-ac
 
 
 
