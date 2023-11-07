@@ -26,7 +26,7 @@ echo 'src-git oled https://github.com/NateLol/luci-app-oled' >>feeds.conf.defaul
 # argon-主题
 rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 # git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
 # wifi驱动R2s
