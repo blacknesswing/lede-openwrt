@@ -53,7 +53,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 #oled
-git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+# git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 
 # luci-app-dockerman
 # git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
