@@ -39,7 +39,9 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 #oled
-git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+# git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+git clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/lean/luci-app-oled
+mv package/lean/luci-app-oled/po/zh_Hans package/lean/luci-app-oled/po/zh-cn
 
 
 #主题-edge-动态登陆界面
