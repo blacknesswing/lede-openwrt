@@ -40,9 +40,9 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 
 #oled
 # git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
-git clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/lean/luci-app-oled
-mv package/lean/luci-app-oled/po/zh_Hans package/lean/luci-app-oled/po/zh-cn
-
+# clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/lean/luci-app-oled
+# package/lean/luci-app-oled/po/zh_Hans package/lean/luci-app-oled/po/zh-cn
+echo 'src-git oled https://github.com/NateLol/luci-app-oled' ./feeds.conf.default
 
 #主题-edge-动态登陆界面
 # git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  
