@@ -15,7 +15,6 @@
 #添加订阅源
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git oled https://github.com/NateLol/luci-app-oled' >>feeds.conf.default
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
@@ -24,7 +23,7 @@ echo 'src-git oled https://github.com/NateLol/luci-app-oled' >>feeds.conf.defaul
 # sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
 # argon-主题
-# rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
+rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 # git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
@@ -53,7 +52,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 #oled
-# git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 
 # luci-app-dockerman
 # git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
