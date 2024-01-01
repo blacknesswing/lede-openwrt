@@ -32,24 +32,3 @@ sed -i "s/OpenWrt /Build by Blacknesswing | OpenWrt Lean /g" package/lean/defaul
 # 修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-From 3b7eb946b1d640d684a921e53e1e50985ab7eb89 Mon Sep 17 00:00:00 2001
-From: QiuSimons <45143996+QiuSimons@users.noreply.github.com>
-Date: Tue, 4 Aug 2020 20:17:53 +0800
-Subject: [PATCH] rockchip: rk3328: add i2c0 controller for nanopi r2s
-
----
- arch/arm64/boot/dts/rockchip/rk3328-nanopi-r2s.dts | 4 ++++
- 1 files changed, 4 insertions(+)
-
---- a/arch/arm64/boot/dts/rockchip/rk3328-nanopi-r2s.dts
-+++ b/arch/arm64/boot/dts/rockchip/rk3328-nanopi-r2s.dts
-@@ -165,6 +165,10 @@
- 	};
- };
- 
-+&i2c0 {
-+	status = "okay";
-+};
-+
- &i2c1 {
- 	status = "okay";
