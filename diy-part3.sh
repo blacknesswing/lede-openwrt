@@ -46,7 +46,7 @@ Subject: [PATCH] rockchip: rk3328: add i2c0 controller for nanopi r2s
 @@ -165,6 +165,10 @@
  	};
  };
-
+ 
 +&i2c0 {
 +	status = "okay";
 +};
