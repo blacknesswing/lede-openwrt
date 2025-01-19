@@ -25,7 +25,7 @@ sed -i 's/OpenWrt/OpenWrt-X86/g' package/base-files/files/bin/config_generate
 # sed -i "s/KERNEL_TESTING_PATCHVER:=*.*/KERNEL_TESTING_PATCHVER:=5.4/g" target/linux/x86/Makefilee
 
 # 版本号里显示一个自己的名字（281677160 build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
-sed -i "s/Openwrt /Build by Blacknesswing | OpenWrt Lean /g" /package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /Build by Blacknesswing | OpenWrt Lean /g" /package/lean/default-settings/files/zzz-default-settings
 
 # 修改 argon 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
