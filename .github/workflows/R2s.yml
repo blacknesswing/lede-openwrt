@@ -171,7 +171,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_R2S_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: LEDE_R2S${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Upload firmware to cowtransfer
