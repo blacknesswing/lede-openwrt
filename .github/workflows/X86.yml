@@ -127,15 +127,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
-    - name: Download package
-      id: package
-      run: |
-        cd openwrt
-        make defconfig
-        make download -j8
-        find dl -size -1024c -exec ls -l {} \;
-        find dl -size -1024c -exec rm -f {} \;
-
     - name: cache
       uses: stupidloud/cachewrtbuild@main
       with:
@@ -144,6 +135,15 @@ jobs:
         toolchain: 'true'
         clean: ${{github.event.inputs.clean}}
         prefix: ${{ github.workspace }}/openwrt
+
+    - name: Download package
+      id: package
+      run: |
+        cd openwrt
+        make defconfig
+        make download -j8
+        find dl -size -1024c -exec ls -l {} \;
+        find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware
       id: compile
