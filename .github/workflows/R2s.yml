@@ -111,7 +111,7 @@ jobs:
       with:
         ccache: 'true'
         mixkey: ${{ env.DEVICE_ARCH }}
-        prefix: ${{ github.workspace }}/lede
+        prefix: ${{ github.workspace }}/openwrt
 
     - name: Load custom feeds
       run: |
