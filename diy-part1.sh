@@ -39,11 +39,11 @@
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 #oled
-# git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/lean/luci-app-oled
 # package/lean/luci-app-oled/po/zh_Hans package/lean/luci-app-oled/po/zh-cn
-echo "src-git oled https://github.com/NateLol/luci-app-oled" >> ./feeds.conf.default
-git clone -b master --depth 1 https://github.com/NateLol/luci-app-oled.git package/lean/luci-app-oled
+# echo "src-git oled https://github.com/NateLol/luci-app-oled" >> ./feeds.conf.default
+# git clone -b master --depth 1 https://github.com/NateLol/luci-app-oled.git package/lean/luci-app-oled
 
 #主题-edge-动态登陆界面
 # git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  
