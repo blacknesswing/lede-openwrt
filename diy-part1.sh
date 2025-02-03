@@ -24,6 +24,7 @@
 # sed -i '$a src-git OpenClash https://github.com/vernesong/OpenClash' feeds.conf.default
 # sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' feeds.conf.default
 
+
 # argon-主题
 # rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 # git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
@@ -35,10 +36,13 @@
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl88x2bu package/kernel/rtl88x2bu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8812au-ac package/rtl8812au-ac
 
-rm -rf package/lean/luci-app-passwall && git clone -b https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
-rm -rf package/lean/luci-app-openclash && git clone -b https://github.com/vernesong/OpenClash package/lean/luci-app-openclash
-rm -rf package/lean/luci-app-passwall2 && git clone -b https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+# rm -rf package/lean/luci-app-passwall && git clone -b https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
+# rm -rf package/lean/luci-app-openclash && git clone -b https://github.com/vernesong/OpenClash package/lean/luci-app-openclash
+# rm -rf package/lean/luci-app-passwall2 && git clone -b https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
 
+rm -rf package/lean/luci-app-passwall2 && git clone -f https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+rm -rf package/lean/luci-app-passwall && git clone https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
+rm -rf package/lean/luci-app-openclash && git clone https://github.com/xiaorouji/openwrt-openclash package/lean/luci-app-openclash
 # Vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
