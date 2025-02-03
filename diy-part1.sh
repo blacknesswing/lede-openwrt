@@ -46,7 +46,7 @@
 
 #cd package/lean/luci-app-passwall2 && git fetch --all && git reset --hard origin/main && git clean -fd
 #cd package/lean/luci-app-passwall && git fetch --all && git reset --hard origin/main && git clean -fd
-#cd package/lean/luci-app-openclash && git fetch --all && git reset --hard origin/main && git clean -
+#cd package/lean/luci-app-openclash && git fetch --all && git reset --hard origin/main && git clean -fd
 
 rm -rf package/lean/luci-app-passwall2 && git clone -b main https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
 rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
