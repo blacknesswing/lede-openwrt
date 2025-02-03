@@ -35,9 +35,9 @@
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl88x2bu package/kernel/rtl88x2bu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8812au-ac package/rtl8812au-ac
 
-rm -rf package/lean/luci-app-passwall && git clone https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
-rm -rf package/lean/luci-app-openclash && git clone https://github.com/vernesong/OpenClash package/lean/luci-app-openclash
-rm -rf package/lean/luci-app-passwall2 && git clone https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+rm -rf package/lean/luci-app-passwall && git clone -b https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
+rm -rf package/lean/luci-app-openclash && git clone -b https://github.com/vernesong/OpenClash package/lean/luci-app-openclash
+rm -rf package/lean/luci-app-passwall2 && git clone -b https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
 
 # Vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
