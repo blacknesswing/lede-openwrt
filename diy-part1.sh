@@ -50,7 +50,7 @@
 
 rm -rf package/lean/luci-app-passwall2 && git clone -b main https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
 rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
-rm -rf package/lean/luci-app-openclash && git clone -b main https://github.com/xiaorouji/openwrt-openclash package/lean/luci-app-openclash
+rm -rf package/lean/luci-app-openclash && git clone -b main https://github.com/vernesong/openwrt-openclash package/lean/luci-app-openclash
 
 # Vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
