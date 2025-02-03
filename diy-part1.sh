@@ -40,15 +40,17 @@
 # rm -rf package/lean/luci-app-openclash && git clone -b https://github.com/vernesong/OpenClash package/lean/luci-app-openclash
 # rm -rf package/lean/luci-app-passwall2 && git clone -b https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
 
-rm -rf package/lean/luci-app-passwall2 && git clone -f https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
-rm -rf package/lean/luci-app-passwall && git clone https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
-rm -rf package/lean/luci-app-openclash && git clone https://github.com/xiaorouji/openwrt-openclash package/lean/luci-app-openclash
+#rm -rf package/lean/luci-app-passwall2 && git clone -f https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+#rm -rf package/lean/luci-app-passwall && git clone https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
+#rm -rf package/lean/luci-app-openclash && git clone https://github.com/xiaorouji/openwrt-openclash package/lean/luci-app-openclash
 
 #cd package/lean/luci-app-passwall2 && git fetch --all && git reset --hard origin/main && git clean -fd
 #cd package/lean/luci-app-passwall && git fetch --all && git reset --hard origin/main && git clean -fd
-#cd package/lean/luci-app-openclash && git fetch --all && git reset --hard origin/main && git clean -fd
+#cd package/lean/luci-app-openclash && git fetch --all && git reset --hard origin/main && git clean -
 
-
+rm -rf package/lean/luci-app-passwall2 && git clone -b main https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
+rm -rf package/lean/luci-app-openclash && git clone -b main https://github.com/xiaorouji/openwrt-openclash package/lean/luci-app-openclash
 
 # Vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
