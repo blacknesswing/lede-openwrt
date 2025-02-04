@@ -13,7 +13,7 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #添加订阅源
-echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >>feeds.conf.default
+# echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >>feeds.conf.default
 # echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 # echo 'src-git OpenClash https://github.com/vernesong/OpenClash' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
