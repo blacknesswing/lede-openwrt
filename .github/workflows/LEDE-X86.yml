@@ -126,14 +126,13 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH lede
-        ln -sf /mnt/workdir/lede $GITHUB_WORKSPACE/lede
+        ln -sf /mnt/workdir/lede $GITHUB_WORKSPACE/openwrt
 
-    - name: Cache
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        mixkey: ${{ env.DEVICE_ARCH }}
-        prefix: ${{ github.workspace }}/lede
+     - uses: klever1988/cachewrtbuild@main
+       with:
+       ccache: 'true'
+       prefix: ${{ github.workspace }}/openwrt
+
 
     - name: 加载自定义 feeds
       run: |
