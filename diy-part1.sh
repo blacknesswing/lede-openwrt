@@ -47,7 +47,7 @@ rm -rf package/lean/luci-app-passwall2 && git clone -b main https://github.com/x
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
 #oled
-git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
+# git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/lean/luci-app-oled
 # package/lean/luci-app-oled/po/zh_Hans package/lean/luci-app-oled/po/zh-cn
 # echo "src-git oled https://github.com/NateLol/luci-app-oled" >> ./feeds.conf.default
