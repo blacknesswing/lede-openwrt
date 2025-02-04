@@ -37,8 +37,8 @@ echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >>fee
 # svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8812au-ac package/rtl8812au-ac
 
 
-rm -rf package/lean/luci-app-passwall2 && git clone -b main https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
-rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
+# rm -rf package/lean/luci-app-passwall2 && git clone -b main https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+# rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
 # rm -rf package/lean/luci-app-openclash && git clone -b main https://github.com/vernesong/openclash package/lean/luci-app-openclash
 
 # Vssr
