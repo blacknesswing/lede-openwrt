@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: X86 ceshi
+name: X86-mihomo
 
 on:
   repository_dispatch:
