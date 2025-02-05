@@ -42,6 +42,13 @@ rm -rf package/lean/luci-app-passwall2 && git clone https://github.com/xiaorouji
 # rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
 # rm -rf package/lean/luci-app-openclash && git clone -b main https://github.com/vernesong/openclash package/lean/luci-app-openclash
 
+
+   rm -rf package/lean/luci-app-passwall2
+    rm -rf package/lean/passwall2
+ 
+    git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/custom/luci-app-passwall2
+    git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/custom/passwall-packages
+    
 # Vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
