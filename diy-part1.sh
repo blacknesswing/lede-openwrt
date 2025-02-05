@@ -37,17 +37,16 @@
 # svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/rtl88x2bu package/kernel/rtl88x2bu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8812au-ac package/rtl8812au-ac
 
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/lean/passwall
-rm -rf package/lean/luci-app-passwall2 && git clone https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/lean/passwall
+# rm -rf package/lean/luci-app-passwall2 && git clone https://github.com/xiaorouji/openwrt-passwall2 package/lean/luci-app-passwall2
 # rm -rf package/lean/luci-app-passwall && git clone -b main https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall
 # rm -rf package/lean/luci-app-openclash && git clone -b main https://github.com/vernesong/openclash package/lean/luci-app-openclash
 
 
-   rm -rf package/lean/luci-app-passwall2
-    rm -rf package/lean/passwall2
- 
-    git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/custom/luci-app-passwall2
-    git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/custom/passwall-packages
+rm -rf package/lean/luci-app-passwall2
+rm -rf package/lean/passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/custom/luci-app-passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/custom/passwall-packages
     
 # Vssr
 # git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
