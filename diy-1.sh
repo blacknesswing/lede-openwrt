@@ -13,7 +13,10 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #添加订阅源
-
+rm -rf package/lean/luci-app-passwall2
+rm -rf package/lean/passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/custom/luci-app-passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/custom/passwall-packages
 echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
 # echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 # echo 'src-git OpenClash https://github.com/vernesong/OpenClash' >>feeds.conf.default
