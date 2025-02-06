@@ -126,14 +126,14 @@ jobs:
       run: |
         git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
 
-    - name: cache
+    - name: 缓存
+      id: cache
       uses: stupidloud/cachewrtbuild@main
       with:
+        skip_saving: 'true'
         ccache: 'true'
-        mixkey: ${{ env.TARGET_DEVICE_ARCH }}
-        toolchain: 'true'
-        clean: ${{github.event.inputs.clean}}
-        prefix: ${{ github.workspace }}/openwrt
+        mixkey: '${{ env.FIRENAME1 }}'
+        prefix: '${{ github.workspace }}/openwrt'
 
     - name: Load custom feeds
       run: |
