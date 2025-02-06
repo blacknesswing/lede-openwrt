@@ -101,8 +101,6 @@ jobs:
         echo "硬盘详情："
         df -Th
         
-    - name: Checkout
-      uses: actions/checkout@main
 
 
     - name: Initialization environment
