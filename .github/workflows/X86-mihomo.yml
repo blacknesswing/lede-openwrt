@@ -126,12 +126,13 @@ jobs:
       run: |
         git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
 
-    - name: Cache
-      uses: klever1988/cachewrtbuild@main
+    - name: Cache Toolchain(缓存工具链)
+      if: env.CACHE_TOOLCHAIN == 'true'
+      uses: HiGarfield/cachewrtbuild@main
       with:
-        ccache: 'true'
-        mixkey: ${{ env.DEVICE_ARCH }}
-        prefix: ${{ github.workspace }}/openwrt
+      ccache: false
+      mixkey: ${{ env.SOURCE_REPO }}-${{ env.REPO_BRANCH }}-${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
+      prefix: ${{ env.OPENWRT_PATH }}
 
     - name: Load custom feeds
       run: |
@@ -201,7 +202,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: LEDE_X86${{ env.FILE_DATE }}
+        name: X86_mihomo${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Upload firmware to cowtransfer
