@@ -75,13 +75,14 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
    
-    - name: Cache Toolchain
-      if: env.CACHE_TOOLCHAIN == 'true'
-      uses: HiGarfield/cachewrtbuild@main
+    - name: cache
+      uses: stupidloud/cachewrtbuild@main
       with:
         ccache: 'true'
-        mixkey: ${{ env.SOURCE_REPO }}-${{ env.REPO_BRANCH }}-${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
-        prefix: ${{ env.OPENWRT_PATH }}
+        mixkey: ${{ env.TARGET_DEVICE_ARCH }}
+        toolchain: 'true'
+        clean: ${{github.event.inputs.clean}}
+        prefix: ${{ github.workspace }}/openwrt
 
         
     - name: Load custom feeds
