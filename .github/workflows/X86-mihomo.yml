@@ -122,7 +122,7 @@ jobs:
 
 
 
- name: Clone source code
+      name: Clone source code
       working-directory: /workdir
       run: |
         df -hT $PWD
