@@ -121,13 +121,15 @@ jobs:
         sudo chown $USER:$GROUPS $GITHUB_WORKSPACE
 
 
-    - name: Clone source code
-      working-directory: ./
-      run: |
-        git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
 
+    - name: Clone source code
+      working-directory: /workdir
+      run: |
+        df -hT $PWD
+        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     - name: Cache
-      uses: stupidloud/cachewrtbuild@main
+      uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
