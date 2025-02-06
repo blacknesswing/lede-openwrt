@@ -130,7 +130,6 @@ jobs:
       id: cache
       uses: stupidloud/cachewrtbuild@main
       with:
-        skip_saving: 'true'
         ccache: 'true'
         mixkey: '${{ env.FIRENAME1 }}'
         prefix: '${{ github.workspace }}/openwrt'
