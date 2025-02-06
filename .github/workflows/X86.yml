@@ -100,7 +100,7 @@ jobs:
         echo "硬盘详情："
         df -Th
         
-    - name: Space cleanup and Initialization environment
+    - name: Initialization environment
       env:
       DEBIAN_FRONTEND: noninteractive
       run: |
