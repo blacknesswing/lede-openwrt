@@ -201,7 +201,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: X86-mihomo-docker${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: LEDE_X86-mihomo${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
