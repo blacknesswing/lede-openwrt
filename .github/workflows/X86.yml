@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: lede-x86_64
+name: x86
 
 on:
   repository_dispatch:
