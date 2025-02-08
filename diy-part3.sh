@@ -18,7 +18,7 @@ sed -i 's/LEDE/OpenWrt-R2s/g' package/base-files/luci2/bin/config_generate
 # sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 修改机器名称
-sed -i 's/OpenWrt/OpenWrt-R2s/g' package/base-files/files/bin/config_generate
+# sed -i 's/OpenWrt/OpenWrt-R2s/g' package/base-files/files/bin/config_generate
 # SWAP LAN WAN 满足千兆场景，可选
 sed -i 's,"eth1" "eth0","eth0" "eth1",g' target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/etc/board.d/02_network
