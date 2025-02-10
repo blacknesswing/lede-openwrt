@@ -56,7 +56,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages packa
 # git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/lean/luci-app-oled
 # package/lean/luci-app-oled/po/zh_Hans package/lean/luci-app-oled/po/zh-cn
-# echo "src-git oled https://github.com/NateLol/luci-app-oled" >> ./feeds.conf.default
+echo "src-git oled https://github.com/NateLol/luci-app-oled" >> ./feeds.conf.default
 # git clone -b master --depth 1 https://github.com/NateLol/luci-app-oled.git package/lean/luci-app-oled
 
 #主题-edge-动态登陆界面
